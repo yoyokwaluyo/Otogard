@@ -1,0 +1,100 @@
+@import url("https://fonts.bunny.net/css?family=roboto:300,400,500,700");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        @apply text-sm;
+    }
+}
+
+@layer components {
+    .career-wrapper h2 {
+        @apply text-2xl uppercase mb-3;
+    }
+    .career-wrapper .img-banner {
+        @apply w-full h-[330px] object-cover mb-3 brightness-[90%];
+    }
+    .career-wrapper p {
+        @apply font-light mb-2 max-sm:text-justify;
+    }
+    .detail-page h2 {
+        @apply text-2xl font-medium my-4;
+    }
+    .detail-page p {
+        @apply font-light mb-1 max-sm:text-justify;
+    }
+    .detail-page img {
+        @apply my-6 brightness-[90%];
+    }
+    .detail-product p {
+        @apply mb-3 text-[16px] leading-[1] font-light;
+    }
+    .detail-product ul {
+        @apply my-5 text-[16px] leading-[1] font-light;
+    }
+    #maklon-btn div.active {
+        @apply text-red-600 font-medium;
+    }
+    .scrollbar-custom {
+        height: 1.3rem !important;
+        background-color: #fff !important;
+        padding: 4px;
+        border-radius: 0 !important;
+    }
+    .scrollbar-custom .swiper-scrollbar-drag {
+        border-radius: 0 !important;
+    }
+    .swiper-next-icon i, .swiper-prev-icon i {
+        @apply text-6xl cursor-pointer;
+    }
+    .swiper-next-icon.swiper-button-disabled, .swiper-prev-icon.swiper-button-disabled {
+        @apply opacity-40
+    }
+    .swiper-next-icon {
+        @apply absolute top-[35%] translate-y-[35%] right-[-1.5rem] md:right-[-3rem] z-[19];
+    }
+    .swiper-prev-icon {
+        @apply absolute top-[35%] translate-y-[35%] left-[-1.5rem] md:left-[-3rem] z-[19];
+    }
+    @media (max-width: 575.98px) {
+        .dd_menu {
+            position: static !important;
+            transform: none !important;
+        }
+    }
+
+    .caption-content {
+        /* text-emphasis-color: transparent;
+        text-shadow: 1px #2B2B2B; */
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #aaa;
+        -moz-text-fill-color: transparent;
+    }
+
+    /* swiper */
+    .swiper {
+        @apply w-full h-full;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        border-radius: 50%;
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 16px !important;
+        color: #fff !important;
+    }
+    /* swiper */
+}
