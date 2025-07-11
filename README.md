@@ -1,3 +1,13 @@
+## Display Image
+
+<img src="./screenshot-1.webp" alt="Image Website">
+
+<img src="./screenshot-2.webp" alt="Image Website">
+
+<img src="./screenshot-3.webp" alt="Image Website">
+
+<img src="./screenshot-4.webp" alt="Image Website">
+
 ## How to Use Frontend
 
 - npm install
@@ -9,7 +19,3 @@ note: jangan edit langsung tanpa npm run watch / dev (app.css, main.css, app.js,
 
 ## Before Commit
  - npm run prod
-
-## Display Image
-
-<img src="./screenshot.png" alt="Image Website">
